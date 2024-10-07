@@ -11,7 +11,42 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /*-- Color Ekle --*/
+  --primary-redColor: #E50914;
+  --primary-blackColor: #000000; 
 }
+.rect { 
+  width: 250px;
+  height: 150px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1 ;
+  letter-spacing: -0.5%;
+}
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: -1.1 ;
+    letter-spacing: -1%;
+}
+h3 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: Auto;
+    letter-spacing: 0%;
+}
+.primary-button {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: Auto;
+    letter-spacing: 0.1%;
+}
+
+
+
 /*
 a {
   font-weight: 500;
