@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -10,22 +13,83 @@
   </head>
 
   <body>
-    <div id="app">
-        <h1>Color System</h1>
-        <div class="colors">
-            <div class="color">
-                <h2>Primary Red</h2>
-                <div class="rect" style="background-color: var(--primary-redColor)">
-                    Primary Red
-                </div>
+    <section class="color-system">
+      <header class="header" style="background-color:var(--primary-red-color) ;">
+        <h1>🌈 COLOR SYSTEM</h1>
+      </header>
+      <div class="container">
+        <div class="primary-container">
+          <div class="color">
+            <h2>Primary Red</h2>
+            <div class="rect" style="background-color: var(--primary-red-color)">
+              Red
             </div>
-            <div class="color">
-                <h2>Primary Black</h2>
-                <div class="rect" style="background-color: var(--primary-blackColor)">
-                    Secondary Black
-                </div>
+          </div>
+          <div class="color">
+            <h2>Primary Black</h2>
+            <div class="rect" style="background-color: var(--primary-black-color);border: 1px solid white;">
+              Black
             </div>
+          </div>
+        </div>   
+        <div class="typographyBox" style="color:black">
+          <h2>Typography Color</h2>  
+          <div class="typo"> 
+            <div class="square
+            " style="background-color: var(--text-lightest)"> <p class="main-1">Main</p>
+              <div>White #120056></div>
+            </div>
+        
+            <div class="square
+            " style="background-color: var(--text-gray)">
+              <div>#8C8C8C</div>
+            </div>
+          
+            <div class="square
+            " style="background-color: var(--text-dark-gray)">
+              <div>#757575</div>
+            </div>
+          
+            <div class="square
+            " style="background-color: var(--text-light-gray)">
+              <div>#999999</div>
+            </div>
+          </div> 
+        </div> 
+        <div class="AccentBox">
+          <h2>Accent Color</h2>
+          <div class="accent">   
+            <div class="square
+            " style="background-color: var(--accent-blue)"> <p class="main-2">Main</p>
+              <div>Blue #0071EB</div>
+            </div>
+          
+            <div class="square
+            " style="background-color: var(--accent-orange)"> <p class="main-3">Main</p>
+              <div>Orange #FFA00A</div>
+            </div>
+          
+            <div class="square
+            " style="background-color: var(--accent-green)"> <p class="main-4">Main</p>
+              <div> Green #5FA53F</div>
+            </div>
+          </div>  
         </div>
-    </div>
+        <div class="BackgroundColor">  
+          <h2>Background Color</h2>
+          <div class="back-color">
+            <div class="square
+            " style="background-color: var(--bg-dark-color)"> <p class="ds-main">Main</p>
+              <div>Black #000000</div>
+            </div>
+
+            <div class="square
+            " style="background-color: var(--bg-color)">
+              <div>Black #222222</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

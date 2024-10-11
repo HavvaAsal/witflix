@@ -1,50 +1,99 @@
+* {
+  font-family: "Signika", sans-serif;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 /*
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 */
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   /*-- Color Ekle --*/
-  --primary-redColor: #E50914;
-  --primary-blackColor: #000000; 
+  --primary-red-color: #E50914;
+  --primary-black-color: #000000; 
+   /* Typography Color */
+   --text-lightest:#FFFFFF;
+   --text-gray:#8C8C8C;
+   --text-dark-gray:#757575;
+   --text-light-gray:#999999;
+   /* Accent Color*/
+   --accent-blue:#0071EB;
+   --accent-orange:#FFA00A;
+   --accent-green:#5FA53F;
+   /* Background Color */ 
+   --bg-dark-color:#000000;
+   --bg-color:#222222;
+
 }
-.rect { 
-  width: 250px;
+
+body {
+color:var(--text-lightest);
+background-color: var(--primary-black-color);
+}
+
+.primary-container {
+display: flex;
+}
+
+.typo {
+  display: flex;
+}
+.accent {
+  display: flex;
+}
+.back-color {
+  display: flex;
+}
+
+.rect {
+  width: 400px;
+  height: 250px;
+}
+.square { 
+  width: 150px;
   height: 150px;
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+.rect:has(p) {
+  justify-content: space-between;
+}
+
+
 h1 {
   font-weight: bold;
   font-size: 3rem;
-  line-height: 1.1 ;
+  line-height: 1.1;
   letter-spacing: -0.5%;
 }
 h2 {
     font-weight: bold;
-    font-size: 3rem;
-    line-height: -1.1 ;
+    font-size: 2rem;
+    line-height: 1.1;
     letter-spacing: -1%;
+    color:#FFFFFF;
 }
 h3 {
-    font-weight: normal;
     font-size: 1.6rem;
-    line-height: Auto;
-    letter-spacing: 0%;
 }
 .primary-button {
-    font-weight: normal;
     font-size: 30px;
     line-height: Auto;
     letter-spacing: 0.1%;
 }
-
 
 
 /*
