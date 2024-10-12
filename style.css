@@ -1,4 +1,7 @@
 * {
+  border: 1px solid lime;
+}
+* {
   font-family: "Signika", sans-serif;
 }
 :root {
@@ -34,6 +37,7 @@
    /* Background Color */ 
    --bg-dark-color:#000000;
    --bg-color:#222222;
+   --bg-lightest: #ffffff;
 
 }
 
@@ -59,7 +63,7 @@ margin-bottom: 2rem;
 }
 .container {
   padding: 4rem;
-  border: 15px solid var(--primary-red-color)
+  border: 15px solid var(--primary-red-color);
 }
 .back-color {
   display: flex;
@@ -129,6 +133,7 @@ margin-bottom: 2rem;
   display: flex;
   justify-content: flex-start;
   gap:2rem;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -148,13 +153,92 @@ h2 {
 h3 {
     font-size: 1.6rem;
 }
-.primary-button {
-    font-size: 30px;
-    line-height: Auto;
-    letter-spacing: 0.1%;
+.text-field {
+  font-size: 1rem;
 }
+.lead {
+  font-size: 1rem;
+}
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5%;
+}
+.ds-element-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+  margin-bottom: 1rem;
+}
+.primary-button,
+.button {
+  font-size: 1.2rem;
+  letter-spacing: 0.1%;
+  background-color: var(--bg-lightest);
+  color:var(--primary-black-color);
+  align-items: center;
+  border:0;
+  border-radius: 0.5rem;
+  display: flex;
+  gap:0.5rem;
+  padding:0.5rem 1.2rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+ .secondary-button {
+  background-color: rgb(255, 255, 255, 0.3);
+  color: var(--text-light-gray);
+  font-size: 1rem;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.8;
+ }
 
+.outline-button {
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--text-gray);
+  border: 1px solid var(--text-gray);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+ 
+ .outline-button:hover {
+  color: var(--white);
+  border: 1px solid var(--text-lightest)
+ }
 
+ .card {
+  background-color: var(--bg-color);
+  min-width: 15rem;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img {
+  height: 2.5rem;
+}
+.card img:first-of-type {
+  padding:0.2rem;
+}
+.card > div {
+  display: flex;
+  justify-content: space-between;
+}
+.card > span {
+  background-color: var(--primary-red-color);
+  align-self: center;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  padding: 0.25rem 0.5rem;
+}
 /*
 a {
   font-weight: 500;
