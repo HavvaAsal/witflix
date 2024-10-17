@@ -239,6 +239,25 @@ h3 {
   border-top-right-radius: 0.3rem;
   padding: 0.25rem 0.5rem;
 }
+
+
+/********WHO'S WATCHİNG*********/
+.profiles {
+  display: flex;
+  gap:1rem;
+}
+.profile {
+  flex-basis: 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  
+
+}
+.profile:last-of-type {
+
+}
 /*
 a {
   font-weight: 500;
