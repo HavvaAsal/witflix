@@ -1,6 +1,6 @@
-* {
+*/* {
   border: 1px solid lime;
-}
+} */
 * {
   font-family: "Signika", sans-serif;
 }
@@ -39,6 +39,13 @@
    --bg-color:#222222;
    --bg-lightest: #ffffff;
 
+   --border-radius: 0.3rem;
+
+   --gap-s: 0.75rem;
+   --gap-m: 1.5rem;
+   --gap-l: 4rem;
+ 
+   --padding-left: 3rem;
 }
 
 body {
@@ -213,6 +220,9 @@ h3 {
   color: var(--white);
   border: 1px solid var(--text-lightest)
  }
+ .cards {
+  overflow-x: scroll;
+ }
 
  .card {
   background-color: var(--bg-color);
@@ -279,7 +289,61 @@ h3 {
     background-color: transparent;
     }
   }
-
+  .hero-box {
+    max-width: 500px;
+    margin: 5rem 0;
+  }
+  
+  /*********UTILITY CLASSES*********/
+  
+  .flex {
+    display: flex;
+  }
+  
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .between {
+    justify-content: space-between;
+  }
+  
+  .gap-s {
+    gap: var(--gap-s);
+  }
+  
+  .gap-m {
+    gap: var(--gap-m);
+  }
+  
+  .gap-l {
+    gap: var(--gap-l);
+  }
+  
+  .body-padding-left {
+    padding-left: var(--padding-left);
+  }
+  a {
+    color: var(--text-light-gray);
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--text-lightest);
+  }
 /*
 a {
   font-weight: 500;
